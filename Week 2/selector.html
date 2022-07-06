@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Selectors </title>
+   
+</head>
+<h1> sheCodes </h1>
+
+<ul> 
+    <li> sheCodes Workshop </li> 
+    <li>sheCodes+</li>
+    <li>sheCodes Express  </li>
+    <li> sheCodes Story</li>
+</ul>
+
+<button> contact me</button>
+
+<script> 
+
+function contactUs(){
+let name = prompt("what is your name?");
+let email = prompt ("what is your email? ");
+let h1 = document.querySelector("h1");
+h1.innerHTML = "Thank you" + name + ", we we'll be in touch!";
+alert("Thank you" + name + ", we we'll be in touch!");
+
+} //end contact
+let contactButton = document.querySelector("button");
+contactButton.addEventListener("click" , contactUs);
+
+
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

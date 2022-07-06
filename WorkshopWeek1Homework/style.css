@@ -1,4 +1,4 @@
-body{
+/*body{
  display: flex;
   min-height: 100vh;
 
@@ -7,7 +7,7 @@ body{
 .demo{
     background: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);    margin: 0 auto;
     text-align: center;
-    /*grows the demo div to the whole page*/
+    /*grows the demo div to the whole page
     flex: 1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -34,7 +34,7 @@ li:hover{
 
 }
 
-/*button*/
+/*button
 button{
     display: block;
     margin: 20px auto;
@@ -45,6 +45,8 @@ button{
     padding: 16px 24px; 
      background:  #377D71;
     font-size: 19px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
    
     
 }
@@ -61,3 +63,4 @@ footer{
     margin-top: 20px;
     font-size: x-large;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+*/

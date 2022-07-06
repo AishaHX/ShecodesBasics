@@ -77,7 +77,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
     
     <div class="demo">
     <h1>
-        <br> ☀️ </br>
+       ☀️ </br>
         Currently 26° in Stockholm</h1>
     <h2>13° / 23°</h2>
     <ul>
@@ -93,10 +93,33 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
             <p>25° / <strong>28°</strong></p>
         </li>
     </ul>
-    <button>Change city</button>
+    <button> Change city</button>
 
     <footer>👩🏽‍💻 Coded by Aisha</footer>
 </div>
+
+<script> 
+changeCity();
+function changeCity(){
+
+    let cityName = prompt("What city do you live in?");
+    let temperature = prompt("what temperature is it now?");
+
+    if(temperature < 10 ){
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = h1.innerHTML =  "🙁 <br /> Currently "  + temperature + "°c in " + cityName
+    }else if(temperature >= 10){
+        let h1 = document.querySelector("h1");
+        h1.innerHTML =  " 😄<br /> Currently "  + temperature+ "°C in " +  cityName
+
+    }//End if
+    let changeButton = document.querySelector("button");
+    changeButton.addEventListener("click" , changeCity);
+
+} //end function
+
+
+</script>
     
 </body>
 </html>
